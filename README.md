@@ -52,25 +52,25 @@ This project is built with **Kotlin** and standard Android Views (no Jetpack Com
 ### Compile & Install
 
 If you have your phone connected via USB:
-
-./gradlew installDebug \
-
+```
+./gradlew installDebug
+```
 
 To just build the APK:
+```
+./gradlew assembleDebug
+```
 
-./gradlew assembleDebug \
-
-
-The APK will be located at: app/build/outputs/apk/debug/app-debug.apk
+The APK will be located at: `app/build/outputs/apk/debug/app-debug.apk`
 
 
 ## 🧩 How it Works
 
 
 
-* **Normal Mode:** Sets system screen off timeout to 30000 ms (30 seconds).
-* **Infinite Mode:** Sets timeout to Int.MAX_VALUE (~24 days).
-    * *Why?* Many modern Android skins (like Funtouch OS) ignore the traditional -1 value for "Never". Using Int.MAX_VALUE forces the system to stay awake effectively forever.
+* **Normal Mode:** Sets system screen off timeout to `30000` ms (30 seconds).
+* **Infinite Mode:** Sets timeout to `Int.MAX_VALUE` (~24 days).
+    * *Why?* Many modern Android skins (like Funtouch OS) ignore the traditional `-1` value for "Never". Using `Int.MAX_VALUE` forces the system to stay awake effectively forever.
 
 
 ## 📝 Note
