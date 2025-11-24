@@ -75,9 +75,9 @@ The APK will be located at: `app/build/outputs/apk/debug/app-debug.apk`
 
 ## 📝 Note
 
-If you need more timer options do raise an issue
+If you need more timer options, features or face any bugs do raise an issue
 
 
 ## 📄 License
 
-Free to use and modify.
+This project is open-source and available under the MIT License.
