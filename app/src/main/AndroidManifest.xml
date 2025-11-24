@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permission to change screen timeout -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:label="Screen Timeout Tile"
+        android:icon="@mipmap/ic_launcher">
+
+        <!-- Quick Settings Tile service -->
+        <service
+            android:name=".ScreenTimeoutTileService"
+            android:label="Screen Timeout"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+
+        </service>
+
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
