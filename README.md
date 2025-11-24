@@ -2,8 +2,9 @@
 
 A lightweight Android Quick Settings Tile that allows you to toggle your screen timeout between **30 seconds** and **Always On** (Infinite) with a single tap from your notification shade.
 
-Designed specifically to handle newer Android versions (like Funtouch OS 14) where standard "Never" timeout options are missing or hidden.
+Designed specifically to handle newer Android versions (like Funtouch OS 14) where standard "Never" timeout options are missing or hidden. 
 
+Born from a problem I've had while running Flutter apps on my phone, which always required deep diving into the settings for a simple change
 
 ## 🚀 Features
 
@@ -70,6 +71,11 @@ The APK will be located at: app/build/outputs/apk/debug/app-debug.apk
 * **Normal Mode:** Sets system screen off timeout to 30000 ms (30 seconds).
 * **Infinite Mode:** Sets timeout to Int.MAX_VALUE (~24 days).
     * *Why?* Many modern Android skins (like Funtouch OS) ignore the traditional -1 value for "Never". Using Int.MAX_VALUE forces the system to stay awake effectively forever.
+
+
+## 📝 Note
+
+If you need more timer options do raise an issue
 
 
 ## 📄 License
